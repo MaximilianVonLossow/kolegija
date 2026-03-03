@@ -9,6 +9,9 @@ int main() {
 
     int valiuta, operacija;
     double kiekis, rezultatas;
+    char repeat = 'y';
+
+    while (repeat == 'y' || repeat == 'Y') {
 
     cout << "Galimos valiutu operacijos su EUR :\n"
          << "1 - GBR:  Pirkti uz 0.8600, parduoti uz 0.9220\n"
@@ -90,6 +93,12 @@ int main() {
         default:
             cout << "Tokios valiutos nera:\n";
     }
+
+        cout << "\nNorite pakartoti? (y/n): ";
+        cin >> repeat;
+    }
+
+    cout << "Programa baigta.\n";
 
         return 0;
 }
